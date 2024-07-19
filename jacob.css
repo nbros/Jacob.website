@@ -4,8 +4,13 @@
 
 body {
     margin: 0;
-    font-size: 120%;
     background-color: black;
+}
+
+@media(min-width: 1200px) {
+    body {
+        font-size: 120%;
+    }
 }
 
 h1 {
@@ -58,7 +63,7 @@ div.main {
     text-align: center;
     height: calc(100vh - 8.5ex);
     overflow-y: scroll;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 }
 
 div.footer {
