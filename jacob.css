@@ -1,0 +1,23 @@
+
+*{
+    text-align: center ;
+}
+
+h1{
+  color:whitesmoke;
+  background: rgb(143, 164, 188);
+}
+
+h3{
+    background: antiquewhite;
+    color: rgba(58, 47, 27, 0.534);
+}
+
+img.background {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 100%;
+    overflow-x: hidden;
+}
