@@ -30,11 +30,19 @@ img.background {
 }
 
 ul.types {
+    padding: 0;
     list-style-type: none;
-    column-count: 3;
     line-height: 175%;
-    width: 600px;
     margin: auto;
+    column-count: 2;
+    width: 350px;
+}
+
+@media(min-width: 600px) {
+    ul.types {
+        column-count: 3;
+        width: 600px;
+    }
 }
 
 ul.types li {
@@ -71,7 +79,19 @@ div.footer {
 div.diapos {
     border: 1px solid gray;
     margin: auto;
-    height: 80vh;
-    width: calc(80vh * 4/3);
     border-radius: 8px;
+}
+
+@media (orientation: landscape) {
+    div.diapos {
+        height: 80vh;
+        width: calc(80vh * 4/3);
+    }
+}
+
+@media (orientation: portrait) {
+    div.diapos {
+        width: 80vw;
+        height: calc(80vw * 3/4);
+    }
 }
