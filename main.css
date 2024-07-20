@@ -51,7 +51,8 @@ ul.types {
     }
 }
 
-ul.types li, .footer {
+ul.types li,
+.footer {
     color: white;
     text-shadow: black 0px 0px 8px;
 }
@@ -60,6 +61,7 @@ a {
     color: rgb(187, 229, 255);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -87,7 +89,14 @@ div.footer {
     flex-wrap: wrap;
     align-content: center;
     align-items: baseline;
-    gap: 0 1em;
+    gap: 0 0.75em;
+}
+
+/* retire les symboles pour tenir dans le footer sur les écrans très étroits */
+@media(max-width: 400px) {
+    div.footer .symbol {
+        display: none
+    }
 }
 
 .part {
@@ -95,19 +104,15 @@ div.footer {
     gap: 0.3em;
 }
 
-div.footer a.contact {
-    justify-self: center;
-}
-
-div.footer a.credits {
-    justify-self: end;
-}
-
 div.swiper {
     backdrop-filter: blur(24px);
-    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
     margin: auto;
     border-radius: 8px;
+}
+
+img {
+    user-select: none;
 }
 
 @media (orientation: landscape) {
