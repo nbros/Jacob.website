@@ -1,29 +1,43 @@
 :root {
-    --footer-height: 7ex;
+    --footer-height: 11ex;
     --column-count: 1;
     --font-size: 80%;
 }
 
-@media(max-width: 11rem) {
+html {
+    font-family: Georgia;
+    font-size: 16px;
+}
+
+div.line {
+    flex-direction: column;
+}
+
+@media(max-width: 12rem) {
     div.footer .symbol {
         display: none
     }
 }
 
-@media(max-width: 20rem) {
+@media(min-width: 16rem) {
     :root {
-        --footer-height: 11ex;
-    }
-    div.line {
-        flex-direction: column;
-        align-items: center;
+        --column-count: 2;
     }
 }
 
-@media(min-width: 25rem) {
+@media(min-width: 22rem) {
     :root {
-        --column-count: 2;
+        --footer-height: 8ex;
+    }
+    div.line {
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 27rem) {
+    :root {
         --font-size: 100%;
+        --footer-height: 7ex;
     }
 }
 
@@ -34,9 +48,9 @@
     }
 }
 
-@media(min-width: 53.2rem) {
+@media(min-width: 57rem) {
     :root {
-        --footer-height: 5ex;
+        --footer-height: 4ex;
     }
 }
 
@@ -104,7 +118,6 @@ div.main {
 }
 
 div.footer {
-    font-family: Segoe UI;
     position: fixed;
     width: 100%;
     height: var(--footer-height);
@@ -124,6 +137,7 @@ div.footer {
 
 div.line {
     display: flex;
+    align-items: center;
     gap: 0 0.75em;
 }
 
