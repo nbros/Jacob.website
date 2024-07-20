@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>jacob.website</title>
-  <link rel="stylesheet" href="./jacob.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menuiserie Jacob</title>
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- https://swiperjs.com/get-started#use-swiper-from-cdn -->
+  <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  <script src="./swiper-bundle.min.js"></script>
+  <script defer src="./main.js"></script>
 </head>
 
 <body>
   <div class='main'>
     <h1>MENUISERIE JACOB</h1>
-    
+
     <h3>Tous types de menuiserie</h3>
     <ul class='types'>
-      <li>Dressing</li>
       <li>Dressing sur mesure</li>
       <li>Placards</li>
       <li>Agencements</li>
@@ -24,20 +28,29 @@
       <li>Portes intérieures</li>
       <li>Cloisons</li>
       <li>Volets</li>
-      <li>Parquets</li>
       <li>Terrasses</li>
       <li>Escaliers en bois</li>
     </ul>
-    
+
     <h3>Fabricant poseur sur mesure</h3>
     <div class="diapos">
 
     </div>
-  
+
+    <!-- conteneur pour les images ajoutées dynamiquement dans le javascript -->
+    <div class="swiper">
+      <div class="swiper-wrapper" id="swiper-wrapper"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
   </div>
 
   <div class='footer'>
-    <a href="./contact.html">Me Contacter</a>
+    <span>Sylvain MENDES &mdash; Conception et Réalisation</span>
+    <a class="part" href="tel:+32492485981"><span>📱</span><span>0492 48 59 81</span></a>
+    <a class="part" href="mailto:sylvainmendes@hotmail.com"><span>✉️</span><span>sylvainmendes@hotmail.com</span></a>
   </div>
 
   <img class='background' src="./img/forêt-optimized.jpeg">
